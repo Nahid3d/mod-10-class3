@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 2px solid navy;
+        }
+        .info{
+            width: 200px;
+            height: 200px;
+            background-color:navy;
+            border: 2px solid cadetblue;
+            transition: .5s;
+
+            /* transform: matrix(10px); */
+        }
+        .info-1{
+            width: 200px;
+            height: 200px;
+            background-color:navy;
+            border: 2px solid cadetblue;
+            transition: .5s;
+
+        }
+        .info-1:hover{
+            transform: rotate(30deg) translate(200px)  scale(.5);
+        }
+        .info:hover{
+            /* transform: rotate3d(45deg); */
+            transform: rotate(45deg) translate(100px)  scale(1.1);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="info">box   </div>
+    </div>          
+    <div class="container">
+        <div class="info">box2</div>
+    </div>
+    <div class="container">
+        <div class="info">box 3</div>
+    </div>
+    <div class="container">
+        <div class="info-1">box   </div>
+    </div>          
+    <div class="container">
+        <div class="info-1">box2</div>
+    </div>
+    <div class="container">
+        <div class="info-1">box 3</div>
+    </div>
+    
+</body>
+</html>

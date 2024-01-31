@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        :root{
+            --back-color:lightskyblue;
+            --back-c:rgb(42, 76, 87);
+            --primary-color:violet;
+            --secondary-color:blue;
+            --font-size:20px;
+            --background-color:purple;
+        }
+        header{
+            border: 3px solid olive;
+
+        }
+        h1,h2,h3{
+            color: var(--background-color);
+
+        }
+        .box,h3,p{
+            color: violet;
+            background-color: var(--background-color);
+            font-size: var(--font-size);
+
+            
+        }
+        .container{
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-rows: 520px; */
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>variable declare properties</h1>
+        <h2>
+            Lorem ipsum dolor sit amet.
+        </h2>
+        <div class="box">
+         <h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         </h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat aut impedit repudiandae molestias officia animi porro quam adipisci repellendus eius, corrupti at eligendi sapiente commodi, laboriosam reiciendis eos omnis! Facilis recusandae rem quo doloremque dolorum? Est omnis cupiditate possimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta aperiam reprehenderit veritatis dolores ullam optio doloribus ut maiores exercitationem!</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h3 style="background-color: var(--back-c);">sidebar</h3>
+            </div>
+        </div>
+        <div class="contain">
+            <h3 style="background-color: var(--back-color);">contain</h3>
+            <!-- <p>l</p> -->
+        </div>
+    </main>
+</body>
+</html>
